@@ -58,4 +58,3 @@ def load_keras_model(filename):
     model = models.load_model(filename)
 
     return model
-

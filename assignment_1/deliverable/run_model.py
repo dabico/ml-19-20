@@ -47,23 +47,28 @@ def load_model(filename):
     return model
 
 
+def transform(x):
+    return np.hstack((x, (np.sin(x[:, 0]) * x[:, 1]).reshape(-1, 1)))
+
+
 if __name__ == '__main__':
     # Load the data
     # This will be replaced with the test data when grading the assignment
-    data_path = '../data/data.npz'
-    x, y = load_data(data_path)
+    x, y = load_data('../data/data.npz')
 
     ############################################################################
     # EDITABLE SECTION OF THE SCRIPT: if you need to edit the script, do it here
     ############################################################################
 
     # Load the trained model
-    baseline_model_path = './baseline_model.pickle'
-    baseline_model = load_model(baseline_model_path)
+    baseline_model = load_model('./baseline_model.pickle')
+    task1_model = load_model('./task1.pickle')
+    task2_model = load_model('./task2.pickle')
 
     # Predict on the given samples
-    y_pred = baseline_model.predict(x)
-
+    # y_pred = baseline_model.predict(x)
+    # y_pred = task1_model.predict(x)
+    y_pred = task2_model.predict(x)
 
     ############################################################################
     # STOP EDITABLE SECTION: do not modify anything below this point.
