@@ -38,13 +38,16 @@
 
 \end{center}
 
+\section*{Tasks}
+
+\newpage
 \section*{Questions}
 
 \subsection*{Training versus Validation}
 
 \begin{figure}[h!]
 \begin{center}    
-\includegraphics[height=0.7\textwidth,keepaspectratio]{figures/figure1}
+\includegraphics[width=1\textwidth,keepaspectratio]{figures/figure1}
 \end{center}
 \caption{This is what you missed last class}
 \end{figure}
@@ -55,7 +58,9 @@ This figure represents the relationship between the approximation performance an
 
 \subsubsection*{Explain the curves' behaviour in each of the three highlighted sections of the figures!}
 
-First let's explain what each of the curves represents. When training our linear regression model, we spit our data into 3 sets: the training, validation and test set. The training set is used exclusively to train the model, while the test set is used to determine accuracy of said training. The validation set is used to determine how well the model generalises unseen data. Observing the graph, we notice that the error of all 3 performance measures is high when model complexity is low. The model simply has not trained enough to make accurate predictions for either seen or unseen data. As model complexity increases, so does the accuracy of the model. Two vertical lines are observable in this section. They represent the optimal models, according to the validation and test set respectively. As model complexity increases further, the training set performance increases, but the validation and test set performance decrease. This is because the model is overtrained to generalise data according to the training set, preventing it from making correct generalisations when being fed the (unseen) validation data.
+First let's explain what each of the curves represents. When training our linear regression model, we spit our data into 3 sets: the training, validation and test set. The training set is used exclusively to train the model, while the test set is used to determine accuracy of said training. The validation set is used to determine how well the model generalises unseen data. Observing the graph, we notice that the error of all 3 performance measures is high when model complexity is low. The model simply has not trained enough to make accurate predictions for either seen or unseen data. 
+\newpage
+As model complexity increases, so does the accuracy of the model. Two vertical lines are observable in this section. They represent the optimal models, according to the validation and test set respectively. As model complexity increases further, the training set performance increases, but the validation and test set performance decrease. This is because the model is overtrained to generalise data according to the training set, preventing it from making correct generalisations when being fed the (unseen) validation data.
 
 \subsubsection*{Is any of the three section associated with the concepts of overfitting and underfitting?}
 
@@ -70,6 +75,7 @@ First let's explain what each of the curves represents. When training our linear
 
 Early stopping is a method for controlling model complexity, with the central goal of avoiding overfitting. Early stopping rules provide guidance as to how many iterations can be run before the learner begins to over-fit. To find this ideal number of iterations, one must observe when the training set error begins to deviate from the validation set error, as the deviation is a clear sign of a model entering the overfitting stage.
 
+\newpage
 \subsection*{Linear Regression}
 
 \subsubsection{}
