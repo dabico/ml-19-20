@@ -6,13 +6,10 @@ from utils import save_sklearn_model
 from deliverable.run_model import load_data
 from deliverable.run_model import transform
 
-import sys
-sys.path.append("../deliverable")
-
 if __name__ == "__main__":
     X, y = load_data("../data/data.npz")
 
-    X_train, _, y_train, _ = train_test_split(X, y, train_size=0.7, test_size=0.15)
+    X_train, _, y_train, _ = train_test_split(X, y, train_size=0.7, test_size=0.15, random_state=1)
 
     model = make_pipeline(FunctionTransformer(transform), LinearRegression())
 
