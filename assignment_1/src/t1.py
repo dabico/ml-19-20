@@ -3,9 +3,11 @@ from sklearn.preprocessing import FunctionTransformer
 from sklearn.model_selection import train_test_split
 from sklearn.pipeline import make_pipeline
 from utils import save_sklearn_model
-
 from deliverable.run_model import load_data
 from deliverable.run_model import transform
+
+import sys
+sys.path.append("../deliverable")
 
 if __name__ == "__main__":
     X, y = load_data("../data/data.npz")
@@ -15,4 +17,4 @@ if __name__ == "__main__":
     model = make_pipeline(FunctionTransformer(transform), LinearRegression())
 
     model.fit(X_train, y_train)
-    save_sklearn_model(model, "../deliverable/task1.pickle")
+    save_sklearn_model(model, "../deliverable/t1.pickle")

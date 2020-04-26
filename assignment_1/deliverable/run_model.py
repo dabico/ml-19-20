@@ -62,10 +62,11 @@ if __name__ == '__main__':
 
     # Load the trained model
     baseline_model = load_model('./baseline_model.pickle')
-    task1_model = load_model('./task1.pickle')
-    task2_model = load_model('./task2.pickle')
+    task1_model = load_model('./t1.pickle')
+    task2_model = load_model('./t2.pickle')
 
     # Predict on the given samples
+    # Uncomment as needed
     # y_pred = baseline_model.predict(x)
     # y_pred = task1_model.predict(x)
     y_pred = task2_model.predict(x)
