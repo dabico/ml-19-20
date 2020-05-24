@@ -67,14 +67,18 @@ if __name__ == '__main__':
 
     # Predict on the given samples
     # Uncomment as needed
-    # y_pred = baseline_model.predict(x)
-    # y_pred = task1_model.predict(x)
-    y_pred = task2_model.predict(x)
+    y_pred_bline = baseline_model.predict(x)
+    y_pred_task1 = task1_model.predict(x)
+    y_pred_task2 = task2_model.predict(x)
 
     ############################################################################
     # STOP EDITABLE SECTION: do not modify anything below this point.
     ############################################################################
 
     # Evaluate the prediction using MSE
-    mse = evaluate_predictions(y_pred, y)
-    print('MSE: {}'.format(mse))
+    mse_bline = evaluate_predictions(y_pred_bline, y)
+    mse_task1 = evaluate_predictions(y_pred_task1, y)
+    mse_task2 = evaluate_predictions(y_pred_task2, y)
+    print('Baseline MSE: {}'.format(mse_bline))
+    print('Task 1   MSE: {}'.format(mse_task1))
+    print('Task 2   MSE: {}'.format(mse_task2))

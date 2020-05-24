@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.19 (TeX Live 2018) (preloaded format=pdflatex 2018.6.25)  25 APR 2020 23:50
+This is pdfTeX, Version 3.14159265-2.6-1.40.19 (TeX Live 2018) (preloaded format=pdflatex 2018.6.25)  26 APR 2020 23:22
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -141,18 +141,18 @@ Package: enumitem 2011/09/28 v3.5.2 Customized lists
  (/Users/ozrendabic/Desktop/ml-19-20/assignment_1/report/.texpadtmp/report.aux)
 \openout1 = `report.aux'.
 
-LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 17.
-LaTeX Font Info:    ... okay on input line 17.
-LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 17.
-LaTeX Font Info:    ... okay on input line 17.
-LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 17.
-LaTeX Font Info:    ... okay on input line 17.
-LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 17.
-LaTeX Font Info:    ... okay on input line 17.
-LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 17.
-LaTeX Font Info:    ... okay on input line 17.
-LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 17.
-LaTeX Font Info:    ... okay on input line 17.
+LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 15.
+LaTeX Font Info:    ... okay on input line 15.
+LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 15.
+LaTeX Font Info:    ... okay on input line 15.
+LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 15.
+LaTeX Font Info:    ... okay on input line 15.
+LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 15.
+LaTeX Font Info:    ... okay on input line 15.
+LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 15.
+LaTeX Font Info:    ... okay on input line 15.
+LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 15.
+LaTeX Font Info:    ... okay on input line 15.
  (/usr/local/texlive/2018/texmf-dist/tex/context/base/mkii/supp-pdf.mkii
 [Loading MPS to PDF converter (version 2006.09.02).]
 \scratchcounter=\count105
@@ -206,40 +206,65 @@ Package grfext Info: Graphics extension search list:
 (grfext)             \AppendGraphicsExtensions on input line 456.
  (/usr/local/texlive/2018/texmf-dist/tex/latex/latexconfig/epstopdf-sys.cfg
 File: epstopdf-sys.cfg 2010/07/13 v1.3 Configuration of (r)epstopdf for TeX Live
-)) [1
-
-{/usr/local/texlive/2018/texmf-var/fonts/map/pdftex/updmap/pdftex.map}]
-<figures/figure1.png, id=9, 994.71625pt x 722.7pt>
-File: figures/figure1.png Graphic file (type png)
-<use figures/figure1.png>
-Package pdftex.def Info: figures/figure1.png  used on input line 50.
-(pdftex.def)             Requested size: 452.9679pt x 329.10469pt.
- [2 <./figures/figure1.png>] [3]
-LaTeX Font Info:    Try loading font information for U+msa on input line 83.
+))
+LaTeX Font Info:    Try loading font information for U+msa on input line 49.
  (/usr/local/texlive/2018/texmf-dist/tex/latex/amsfonts/umsa.fd
 File: umsa.fd 2013/01/14 v3.01 AMS symbols A
 )
-LaTeX Font Info:    Try loading font information for U+msb on input line 83.
+LaTeX Font Info:    Try loading font information for U+msb on input line 49.
  (/usr/local/texlive/2018/texmf-dist/tex/latex/amsfonts/umsb.fd
 File: umsb.fd 2013/01/14 v3.01 AMS symbols B
 )
-LaTeX Font Info:    Try loading font information for U+lasy on input line 83.
+LaTeX Font Info:    Try loading font information for U+lasy on input line 49.
  (/usr/local/texlive/2018/texmf-dist/tex/latex/base/ulasy.fd
 File: ulasy.fd 1998/08/17 v2.2e LaTeX symbol font definitions
-) [4] (/Users/ozrendabic/Desktop/ml-19-20/assignment_1/report/.texpadtmp/report.aux) ) 
+)
+Overfull \hbox (4.43622pt too wide) in paragraph at lines 50--51
+[]\OT1/cmr/m/n/12 It then splits the $\OML/cmm/m/it/12 X$ \OT1/cmr/m/n/12 and $\OML/cmm/m/it/12 y$ \OT1/cmr/m/n/12 data into the train-ing and test sets, us-ing the \OT1/cmr/m/it/12 train[]test[]split
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 55--60
+
+ []
+
+[1
+
+{/usr/local/texlive/2018/texmf-var/fonts/map/pdftex/updmap/pdftex.map}]
+Underfull \hbox (badness 10000) in paragraph at lines 72--76
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 72--76
+
+ []
+
+[2]
+<figures/figure1.png, id=21, 994.71625pt x 722.7pt>
+File: figures/figure1.png Graphic file (type png)
+<use figures/figure1.png>
+Package pdftex.def Info: figures/figure1.png  used on input line 84.
+(pdftex.def)             Requested size: 452.9679pt x 329.10469pt.
+ [3 <./figures/figure1.png>] [4] [5]
+Underfull \hbox (badness 10000) in paragraph at lines 196--199
+
+ []
+
+[6] (/Users/ozrendabic/Desktop/ml-19-20/assignment_1/report/.texpadtmp/report.aux) ) 
 Here is how much of TeX's memory you used:
- 2760 strings out of 492649
- 38463 string characters out of 6129622
- 102193 words of memory out of 5000000
- 6586 multiletter control sequences out of 15000+600000
- 11028 words of font info for 43 fonts, out of 8000000 for 9000
+ 2783 strings out of 492649
+ 38717 string characters out of 6129622
+ 106180 words of memory out of 5000000
+ 6602 multiletter control sequences out of 15000+600000
+ 14346 words of font info for 58 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
- 41i,5n,27p,604b,265s stack positions out of 5000i,500n,10000p,200000b,80000s
-</usr/local/texlive/2018/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx12.pfb></usr/local/texlive/2018/texmf-dist/fonts/type1/public/amsfonts/cm/cmcsc10.pfb></usr/local/texlive/2018/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi12.pfb></usr/local/texlive/2018/texmf-dist/fonts/type1/public/amsfonts/cm/cmr12.pfb></usr/local/texlive/2018/texmf-dist/fonts/type1/public/amsfonts/cm/cmr8.pfb></usr/local/texlive/2018/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb>
-Output written on /Users/ozrendabic/Desktop/ml-19-20/assignment_1/report/.texpadtmp/report.pdf (4 pages, 197514 bytes).
+ 41i,12n,27p,737b,267s stack positions out of 5000i,500n,10000p,200000b,80000s
+</usr/local/texlive/2018/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx10.pfb></usr/local/texlive/2018/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx12.pfb></usr/local/texlive/2018/texmf-dist/fonts/type1/public/amsfonts/cm/cmcsc10.pfb></usr/local/texlive/2018/texmf-dist/fonts/type1/public/amsfonts/cm/cmex10.pfb></usr/local/texlive/2018/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi10.pfb></usr/local/texlive/2018/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi12.pfb></usr/local/texlive/2018/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi6.pfb></usr/local/texlive/2018/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi8.pfb></usr/local/texlive/2018/texmf-dist/fonts/type1/public/amsfonts/cm/cmr10.pfb></usr/local/texlive/2018/texmf-dist/fonts/type1/public/amsfonts/cm/cmr12.pfb></usr/local/texlive/2018/texmf-dist/fonts/type1/public/amsfonts/cm/cmr6.pfb></usr/local/texlive/2018/texmf-dist/fonts/type1/public/amsfonts/cm/cmr7.pfb></usr/local/texlive/2018/texmf-dist/fonts/type1/public/amsfonts/cm/cmr8.pfb></usr/local/texlive/2018/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb></usr/local/texlive/2018/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy6.pfb></usr/local/texlive/2018/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy8.pfb></usr/local/texlive/2018/texmf-dist/fonts/type1/public/amsfonts/cm/cmti10.pfb></usr/local/texlive/2018/texmf-dist/fonts/type1/public/amsfonts/cm/cmti12.pfb></usr/local/texlive/2018/texmf-dist/fonts/type1/public/amsfonts/symbols/msam10.pfb>
+Output written on /Users/ozrendabic/Desktop/ml-19-20/assignment_1/report/.texpadtmp/report.pdf (6 pages, 338295 bytes).
 PDF statistics:
- 44 PDF objects out of 1000 (max. 8388607)
- 29 compressed objects within 1 object stream
+ 102 PDF objects out of 1000 (max. 8388607)
+ 72 compressed objects within 1 object stream
  0 named destinations out of 1000 (max. 500000)
  6 words of extra memory for PDF output out of 10000 (max. 10000000)
 
