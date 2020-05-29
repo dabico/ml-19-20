@@ -1,34 +1,25 @@
+from tensorflow.keras.utils import to_categorical
 from tensorflow.keras.models import load_model
+from src.utils import load_cifar10_test, calculate_mce
 
 if __name__ == '__main__':
+    """
+    First load the CIFAR-10 test data, and preprocess it.
+    """
+    (x_test, y_test) = load_cifar10_test()
+    x_test = x_test / 255
+    y_test = to_categorical(y_test, 3)
 
-    # Load the test CIFAR-10 data
-
-    # ...
-
-
-    # Preprocessing
-
-    # ...
-
-
-    # Load the trained models
-    #for example
+    """
+    Then load the trained models and predict on the given samples.
+    """
     model_task1 = load_model('./nn_task1.h5')
     model_task2 = load_model('./nn_task2.h5')
-
-
-    # Predict on the given samples
-    #for example
     y_pred_task1 = model_task1.predict(x_test)
     y_pred_task2 = model_task2.predict(x_test)
 
-
-    # Evaluate the missclassification error on the test set
-    #for example
-    assert y_test.shape == y_pred_task1.shape
-    assert y_test.shape == y_pred_task2.shape
-    acc1 = (y_test == y_pred_task1).mean()
-    acc2 = (y_test == y_pred_task2).mean()
-    print("Accuracy model task 1:", acc1)
-    print("Accuracy model task 2:", acc2)
+    """
+    Finally evaluate the misclassification error for the two models.
+    """
+    print("Misclassification error task 1:", calculate_mce(y_pred_task1, y_test))
+    print("Misclassification error task 2:", calculate_mce(y_pred_task2, y_test))
