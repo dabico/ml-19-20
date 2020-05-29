@@ -40,6 +40,8 @@ if __name__ == "__main__":
     The network setup mimics that of the one found in Task 1, except we swap the number of neurons in the dense layer
     and the RMSprop learning rate with the respective hyper-parameters.
     Evaluation results are appended to the evaluations array.
+    
+    Keep in mind that evaluating 24 models takes approximately two and a half hours...
     """
     evaluations = []
     for (neuron, rate) in parameters:
@@ -63,6 +65,7 @@ if __name__ == "__main__":
 
     """
     Having evaluated all the hyper-parameter configurations, we take the best one to fit the data.
+    The best configuration found involved 16 neurons and a learning rate of 0.001.
     """
     (neuron_best, rate_best) = parameters[np.argmax(evaluations)]
     print("Neurons: ", neuron_best)
@@ -80,7 +83,6 @@ if __name__ == "__main__":
     model.add(Dropout(0.3))
     model.add(Dense(3, activation="softmax", kernel_regularizer=l2(0.005)))
     model.compile(optimizer=RMSprop(learning_rate=rate_best), loss='categorical_crossentropy', metrics=['accuracy'])
-    model.summary()
     es = EarlyStopping(monitor='val_accuracy', verbose=0, patience=10, restore_best_weights=True, mode='max')
     model.fit(x_train, y_train, validation_data=(x_valid, y_valid),
               batch_size=128, callbacks=[es], verbose=0, epochs=500)

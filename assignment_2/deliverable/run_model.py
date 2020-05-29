@@ -20,6 +20,13 @@ if __name__ == '__main__':
 
     """
     Finally evaluate the misclassification error for the two models.
+    The misclassification error of the two models is:
+    - task 1: 0.1493...
+    - task 2: 0.1546...
+    The difference between the two being: 0.0053...
     """
-    print("Misclassification error task 1:", calculate_mce(y_pred_task1, y_test))
-    print("Misclassification error task 2:", calculate_mce(y_pred_task2, y_test))
+    mce1 = calculate_mce(y_pred_task1, y_test)
+    mce2 = calculate_mce(y_pred_task2, y_test)
+    print("Misclassification error task 1:", mce1)
+    print("Misclassification error task 2:", mce2)
+    print("Difference: ", abs(mce1 - mce2))
